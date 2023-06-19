@@ -1,25 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - this is my entry
+ * main - This is my entry
  *
  * Return: Always 0 on success
  */
 
 int main(void)
 {
-int lowerCase = 'a';
-int upperCase = 'A';
-while (lowerCase <= 'z')
-{
-putchar(lowerCase);
-lowerCase += 1;
-}
-while (upperCase <= 'z')
-{
-putchar(upperCase);
-upperCase += 1;
-}
-putchar('\n');
-return (0);
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
+
+	for (i = 0; i < 52; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }
